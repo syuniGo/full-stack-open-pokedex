@@ -7,7 +7,7 @@ export default [
   {
     files: ["**/*.js"],
     languageOptions: {
-      sourceType: "commonjs",
+      sourceType: "module",
       globals: {
         ...globals.node,
       },
@@ -26,7 +26,7 @@ export default [
         'unix'
       ],
       '@stylistic/js/quotes': [
-        'error',
+        'warn',
         'single'
       ],
       '@stylistic/js/semi': [
@@ -42,6 +42,7 @@ export default [
         'error', { 'before': true, 'after': true },
       ],
       'no-console': 'off',
+      'quotes': 'off',
     },
   },
   { 
